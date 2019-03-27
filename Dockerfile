@@ -9,6 +9,7 @@ RUN go get github.com/golang/dep/cmd/dep \
    && go get github.com/mwitkow/go-proto-validators/protoc-gen-govalidators \
    && apt-get update \
    && apt-get -y install mysql-client \
+   && apt-get -y install postgresql-client \
    && go get github.com/rubenv/sql-migrate/... \
    && apt install -y netcat \
    && apt-get install zip unzip \
