@@ -16,4 +16,5 @@ RUN go get github.com/golang/dep/cmd/dep \
    && curl -OL https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip \
    && unzip protoc-3.2.0-linux-x86_64.zip -d protoc3\
    && mv protoc3/bin/* /usr/local/bin/\
-   && mv protoc3/include/* /usr/local/include/
+   && mv protoc3/include/* /usr/local/include/ \
+   && apt-get install -y mysql-server
